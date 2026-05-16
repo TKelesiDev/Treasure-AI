@@ -53,7 +53,7 @@ if user_input := st.chat_input("Ask Treasure anything..."):
             
             # Send to Groq using their fast, free model
             completion = client.chat.completions.create(
-                model="llama3-8b-8192",
+                model="llama-3.1-8b-instant",
                 messages=formatted_messages,
                 temperature=0.3,
             )
